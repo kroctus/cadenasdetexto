@@ -18,18 +18,18 @@ public class ClaseString {
         // Tamaño de la cadena
         System.out.println("Tamaño: " + s.length());
 
-        //Obtener el char de una posición concreta
+        // Obtener el char de una posición concreta
         System.out.println("Char asociado a la posición 5: " + s.charAt(5));
 
         //obtener subcadena desde el caracter i-ésimo hasta el final de la cadena
         String subcadena = s.substring(3);
         System.out.println("Subcadena= " + subcadena);
 
-        //Caracter j-ésimo de la cadena
+        // Caracter j-ésimo de la cadena
         subcadena = s.substring(8, 15);
         System.out.println("Subcadena= " + subcadena);
 
-        //Concatenar cadenas. Equivale al operador +
+        // Concatenar cadenas. Equivale al operador +
         String s1 = "ies";
         String s2 = "Mardealboran.com";
         String nuevo = s1 + s2;
@@ -45,7 +45,7 @@ public class ClaseString {
         indice = nuevo.indexOf("ran", 10);
         System.out.println("Indice: " + indice);
 
-        //Métodos equals y equalsIgnoreCase
+        // Métodos equals y equalsIgnoreCase
         System.out.println("Igualdad Java y java" + "Java".equals("java"));
         System.out.println("Igualdad Java y java" + "Java".equalsIgnoreCase("java"));
 
@@ -60,9 +60,38 @@ public class ClaseString {
         compareTo = "aes".compareTo(s1);
         System.out.println("Comparación de s1 y aes: " + compareTo);
         
-        //Conversión mayúscula y minúsculas
+        // Conversión mayúscula y minúsculas
         String mayusculas = s2.toUpperCase();
         System.out.println("s2 en mayus: " + s2.toUpperCase());
         System.out.println("String mayusculas en minusc: " + mayusculas.toLowerCase());
+        
+        String espacios=" palabra palabra ";
+        System.out.println("Tamaño de espacios: " + espacios.length());
+        String sinEspacios = espacios.trim();
+        System.out.println("Tamaño de sinEspacios: " + sinEspacios.length());
+        
+        // Reemplazo de cararcteres
+        System.out.println("String original: " + s2);
+        String str2= s2.replace('a', 'x');
+        System.out.println("String reemplazado: " + str2);
+        
+        // Contenido
+        
+        String aBuscar= "dealbo";
+        System.out.println("¿Contiene?" + s2 + "la subcadena" + aBuscar + "? " + s2.contains(aBuscar));
+        
+        // Probar Métodos endsWith , startsWith, isEmpty
+        
+        
+        
+        // Obtener un array de char de la cadena
+        // Declacarción de un variable array de tipo char
+        char[] arrayChar;
+        arrayChar= s2.toCharArray();
+        //El atributo length existe en todos los arrays y me indica su tamaño . Equivalente al método length() de los String
+        for (int i =0 ; i<arrayChar.length; i++){
+            //Para acceder a cada posición del array uso los corchetes
+            System.out.println("Posicion i =" + i + " contenido = " + arrayChar[i]);
+        }
     }
 }
