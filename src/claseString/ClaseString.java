@@ -82,6 +82,23 @@ public class ClaseString {
         
         // Probar Métodos endsWith , startsWith, isEmpty
         
+        //endsWith
+        
+        String you= "you are beautiful";
+        boolean hola=  you.endsWith("he is beautiful");
+        System.out.println("Respuesta: " + hola);
+        
+        //isEmpty
+        
+        you="hola que tal";
+        hola= you.isEmpty();
+        System.out.println("Respuesta: " + hola);
+        
+        //startsWith
+        
+        you= "you are beautiful";
+        hola=  you.startsWith("he is beautiful");
+        System.out.println("Respuesta: " + hola);
         
         
         // Obtener un array de char de la cadena
@@ -93,5 +110,6 @@ public class ClaseString {
             //Para acceder a cada posición del array uso los corchetes
             System.out.println("Posicion i =" + i + " contenido = " + arrayChar[i]);
         }
+        
     }
 }
