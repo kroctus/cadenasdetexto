@@ -19,6 +19,21 @@ public class ClaseString {
         System.out.println("Tamaño: " + s.length());
         
         //Obtener el char de una posición concreta
-        System.out.println("Posición de la primera r: " + s.charAt(5));
+        System.out.println("Char asociado a la posición 5: " + s.charAt(5));
+        
+        //obtener subcadena desde el caracter i-ésimo hasta el final de la cadena
+        String subcadena= s.substring(3);
+        System.out.println("Subcadena= " + subcadena);
+        
+        //Caracter j-ésimo de la cadena
+        subcadena= s.substring(8,15);
+        System.out.println("Subcadena= " + subcadena);
+        
+        //Concatenar cadenas. Equivale al operador +
+        String s1= "ies";
+        String s2="Mardealboran.com";
+        String nuevo = s1+s2;
+        System.out.println(nuevo);
+        
     }
 }
