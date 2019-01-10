@@ -11,4 +11,14 @@ package claseString;
  */
 public class ClaseString {
     
+    public static void main(String[] args) {
+    
+        String s= "iesmardealboran.com";
+     
+        // Tamaño de la cadena
+        System.out.println("Tamaño: " + s.length());
+        
+        //Obtener el char de una posición concreta
+        System.out.println("Posición de la primera r: " + s.charAt(5));
+    }
 }
